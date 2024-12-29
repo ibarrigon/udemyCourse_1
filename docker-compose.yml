@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    image: pythonBegin
+    volumes:
+      - .:/home/app_user/data
+    stdin_open: true
+    tty: true
