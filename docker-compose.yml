@@ -1,7 +1,7 @@
 services:
   app:
     build: .
-    image: pythonBegin
+    image: udemy_course
     volumes:
       - .:/home/app_user/data
     stdin_open: true
