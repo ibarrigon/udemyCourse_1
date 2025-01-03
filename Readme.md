@@ -23,3 +23,12 @@ python3.14
 ## Run file
 
 python3.14 <file.py>
+
+# Proyects in daily_proyects
+
+## Link
+https://dailypythonprojects.substack.com/
+
+## Solutions
+
+Every day i recived an exercise. In file with format `ex<date(yyyymmdd)>.py` it's a comment with the problem and the codified solution
