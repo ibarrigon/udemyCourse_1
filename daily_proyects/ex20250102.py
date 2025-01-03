@@ -27,3 +27,4 @@
 #
 # Required Libraries: os, csv, datetime
 
+directory = input('Enter the directory path to scan: ')
