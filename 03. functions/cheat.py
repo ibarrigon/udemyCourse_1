@@ -1,8 +1,8 @@
-# 1
+# Define functions:
 def cube_volume(a):
     return a * a * a
 
-# 2
+# Write if-else conditionals:
 message = "hello there"
  
 if "hello" in message:
@@ -10,7 +10,7 @@ if "hello" in message:
 else:
     print("I don't understand")
 
-# 3 
+# write if-elif-else conditionals:
 message = "hello there"
  
 if "hello" in message:
@@ -22,7 +22,7 @@ elif "hey" in message:
 else:
     print("I don't understand")
 
-# 4    
+# Use the and operator to check if both conditions are True at the same time:
 x = 1
 y = 1
  
@@ -31,7 +31,7 @@ if x == 1 and y==1:
 else:
     print("No")
 
-# 5    
+# Use the or operator to check if at least one condition is True:
 x = 1
 y = 2
  
@@ -40,10 +40,11 @@ if x == 1 or y==2:
 else:
     print("No")
 
-# 6
+
+# Check if a value is of a particular type with isinstance:
 isinstance("abc", str)
 isinstance([1, 2, 3], list)
 
-# 7
+# or directly:
 type("abc") == str
-type([1, 2, 3]) == lst
+type([1, 2, 3]) == list
