@@ -31,3 +31,21 @@ https://dailypythonprojects.substack.com/
 ## Solutions
 Every day i recived an exercise. In file with format `ex<date(yyyymmdd)>.py` it's a comment with the problem and the 
 codified solution
+
+# librerias
+
+pandas: open files (csv, json, excel, ...)
+
+Notebooks:
+ipython: better printing for large text
+Jupyter: (Notebook) third-party library. To use online https://colab.research.google.com/#create=true
+
+Open excel
+openpyxl
+xlrd: old excel files
+
+Coordinates:
+geopy
+
+Images:
+opencv-python
