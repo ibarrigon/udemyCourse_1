@@ -26,5 +26,24 @@
 # modification_time = os.path.getmtime(file_path)
 #
 # Required Libraries: os, csv, datetime
+import os
+import pandas
 
 directory = input('Enter the directory path to scan: ')
+files = os.listdir(directory)
+
+data = []
+for file_name in files:
+    creation_time = os.path.getctime(file_name)
+    modification_time = os.path.getmtime(file_name)
+    data.append({'file': file_name, 'creation': creation_time, 'modification': modification_time, 'size': '','type': ''})
+
+while True:
+    save = input('Do you want to save the metadata to a CSV file? (y/n):')
+    if save == 'y' or save == 'n':
+        break
+
+if save == 'y':
+    # save
+    with open('.csv', 'w') as file:
+        file.write(data)
