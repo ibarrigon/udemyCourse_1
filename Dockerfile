@@ -11,22 +11,25 @@ RUN apt-get -y install build-essential
 # required almost for opencv-python
 RUN apt-get -y install libopencv-*
 
-RUN pip install --upgrade pip setuptools wheel
+RUN pip3 install --upgrade pip setuptools wheel
 
 # work with files: csv, json, excel, ...
-RUN pip install pandas
+RUN pip3 install pandas
 
 # Excel files
-RUN pip install openpyxl xlrd
+RUN pip3 install openpyxl xlrd
 
 # coordinates
-RUN pip install geopy
+RUN pip3 install geopy
 
 # install OpenCV for process images
-RUN pip install opencv-python
+RUN pip3 install opencv-python
 
 # python notebooks
 # RUN pip install ipython jupyter
+
+RUN pip3 install folium
+RUN pip3 install jinja2
 
 USER app_user
 
