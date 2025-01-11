@@ -3,10 +3,12 @@
 # Some builtin objects are not immediately available in the global namespace. They are parts of a builtin module. To 
 # use those objects the module needs to be imported first. E.g.:
 import time
+
 time.sleep(5)
 
 #A list of all builtin modules can be printed out with:
 import sys
+
 print(sys.builtin_module_names)
 
 # Standard libraries is a jargon that includes both builtin modules written in C and also modules written in Python.

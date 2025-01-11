@@ -14,18 +14,9 @@ pip3 install <name>
 
 # Libreries
 
-1. pandas: open files (csv, json, excel, ...)
 2. Open excel
     + openpyxl
     + xlrd: old excel files
-3. Coordinates:
-    + geopy
-4. Images
-    + opencv-python
-5. Maps:
-    + folium: makes it easy to visualize data that’s been manipulated in Python on an interactive leaflet map
-6. Templating
-    + jinja2
 
 # Notebooks
 
