@@ -29,7 +29,7 @@ RUN pip3 install opencv-python
 # RUN pip install ipython jupyter
 
 RUN pip3 install folium
-RUN pip3 install jinja2
+# RUN pip3 install jinja2 # included inside folium
 
 USER app_user
 
