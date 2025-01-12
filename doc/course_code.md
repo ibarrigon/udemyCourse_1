@@ -1,7 +1,5 @@
 [go back](../Readme.md)
 
-# Code
-
 ## Folders
 
 You can find in this repository a folder named course_code. Inside ther is a lot of folders named 
