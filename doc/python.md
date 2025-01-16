@@ -29,3 +29,9 @@ https://colab.research.google.com/#create=true
 ## Local
 ipython: better printing for large text.
 Jupyter: (Notebook) third-party library. 
+
+# Comments
+
+This course comes with the premise that we can access any device of the computer. The development was do inside docker
+container, that means we CAN'T access the machine devices or not every one. As it's say inside the couse comments, we 
+need to research more to solve this problem.

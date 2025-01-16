@@ -1,0 +1,15 @@
+import cv2
+
+video = cv2.VideoCapture(0)
+
+while True:
+    check, frame = video.read()
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    cv2.imshow('Color Capturing', gray)
+    if cv2.waitKey(1) == ord('q'): 
+        break
+
+# This code is required any time
+video.release()
+cv2.destroyAllWindows()
