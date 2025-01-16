@@ -12,4 +12,4 @@ These is the testing of the code readed and worked in the course.
 1. [Files](./course/files.md)
 2. [images](./course/images.md)
 3. [Map](./course/webmap.md)
-4. [Images](./course/computer_vision.md)
+4. [Images & video capture](./course/computer_vision.md)

@@ -10,6 +10,7 @@ RUN apt-get -y install build-essential
 
 # required almost for opencv-python
 RUN apt-get -y install libopencv-*
+RUN apt-get -y install libgl1-mesa-glx libglib2.0-0
 
 RUN pip3 install --upgrade pip setuptools wheel
 
@@ -23,7 +24,8 @@ RUN pip3 install openpyxl xlrd
 RUN pip3 install geopy
 
 # install OpenCV for process images
-RUN pip3 install opencv-python
+RUN pip3 install opencv-python 
+# Maybe you required: RUN pip3 install opencv-python-headless 
 
 # python notebooks
 # RUN pip install ipython jupyter
