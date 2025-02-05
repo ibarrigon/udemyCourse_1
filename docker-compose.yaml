@@ -1,0 +1,18 @@
+services:
+  app:
+    container_name: python
+    build:
+      context: ./docker/python
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+
+  jupyter:
+    container_name: jupyter-py
+    build:
+      context: ./docker/jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/app
