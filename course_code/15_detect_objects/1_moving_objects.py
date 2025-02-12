@@ -49,7 +49,7 @@ while True:
     if cv2.waitKey(1) == ord('q'): 
         break
 
-print(times)
+# print(times)
 
 for i in range(0, len(times), 2):
     data_content = data_content.append({ 'Start': times[i], 'End': times[i + 1] }, ignore_index = true)
