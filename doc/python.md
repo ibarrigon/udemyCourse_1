@@ -35,3 +35,10 @@ Jupyter: (Notebook) third-party library.
 This course comes with the premise that we can access any device of the computer. The development was do inside docker
 container, that means we CAN'T access the machine devices or not every one. As it's say inside the couse comments, we 
 need to research more to solve this problem.
+
+# Conventions
+
+In Python the convention is snake_case, that means:
+```cualquier_cosa = ''```
+and not like PHP that the convention is camelCase:
+```cualquierCosa = ''```
