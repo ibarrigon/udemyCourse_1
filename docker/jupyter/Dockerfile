@@ -2,6 +2,10 @@ FROM python:3.12-bookworm
 
 WORKDIR /app
 
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN apt-get -y install build-essential
+
 # required almost for opencv-python
 RUN apt-get -y install libopencv-*
 RUN apt-get -y install libgl1-mesa-glx libglib2.0-0
