@@ -23,10 +23,10 @@ Height: %s m
 """
 
 map = folium.Map(location = [40.41751246336078, -3.704411462653831], zoom_start = 6, tiles = 'cartodbpositron')
-fg = folium.FeatureGroup(name = 'Volcanoes')
+feature_group = folium.FeatureGroup(name = 'Volcanoes')
 
 for lt, ln, name, elevation in zip(lat, lon, names, elevations):
-    fg.add_child(
+    feature_group.add_child(
         folium.CircleMarker(
             location = [lt, ln], 
             radius = 6, # six pixels radius
@@ -37,8 +37,8 @@ for lt, ln, name, elevation in zip(lat, lon, names, elevations):
         )
     )
 
-fg2 = folium.FeatureGroup(name = 'Population')
-fg2.add_child(
+feature_group2 = folium.FeatureGroup(name = 'Population')
+feature_group2.add_child(
     folium.GeoJson(
         data = (open('./course_code/12_web_map/files/world.json', 'r', encoding = 'utf-8-sig').read()),
         style_function = lambda item: {
@@ -48,8 +48,8 @@ fg2.add_child(
     )
 )
 
-map.add_child(fg)
-map.add_child(fg2)
+map.add_child(feature_group)
+map.add_child(feature_group2)
 map.add_child(folium.LayerControl())
 
 map.save('./course_code/12_web_map/maps/generated_map_10.html')

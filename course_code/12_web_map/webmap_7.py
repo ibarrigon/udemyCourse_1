@@ -23,11 +23,11 @@ Height: %s m
 """
 
 map = folium.Map(location = [40.41751246336078, -3.704411462653831], zoom_start = 6, tiles = 'OpenTopoMap')
-fg = folium.FeatureGroup(name = 'Volcanoes')
+feature_group = folium.FeatureGroup(name = 'Volcanoes')
 
 for lt, ln, name, elevation in zip(lat, lon, names, elevations):
     iframe = folium.IFrame(html=html % (name, name, elevation), width=200, height=100)
-    fg.add_child(
+    feature_group.add_child(
         folium.Marker(
             location = [lt, ln], 
             popup = folium.Popup(iframe), 
@@ -35,6 +35,6 @@ for lt, ln, name, elevation in zip(lat, lon, names, elevations):
         )
     )
 
-map.add_child(fg)
+map.add_child(feature_group)
 
 map.save('./course_code/12_web_map/maps/generated_map_7.html')

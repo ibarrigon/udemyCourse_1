@@ -14,7 +14,7 @@ print(im_gray)
 #  [209 134 255  97 182]]
 
 im_rgb = cv2.imread('files/smallgray.png', 1)
-print(im_g)
+print(im_rgb)
 # [[[187 187 187]
 #   [158 158 158]
 #   [104 104 104]

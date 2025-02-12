@@ -23,8 +23,8 @@ location = nom.geocode('1056 Sanchez St, San Francisco, California, USA')
 print(location.latitude)
 print(location.longitude)
 
-df = pandas.read_csv('files/supermarkets.csv')
-df['Address'] = df['Address'] + ', ' + df['City'] + ', ' + df['State'] + ', ' + df['Country']
-df['Coordinates'] = df['Address'].apply(nom.geocode)
-df['Latitude'] = df['Coordinates'].apply(lambda x: x.latitude if x != None else None)
-df['Longitude'] = df['Coordinates'].apply(lambda x: x.longitude if x != None else None)
+data_csv = pandas.read_csv('files/supermarkets.csv')
+data_csv['Address'] = data_csv['Address'] + ', ' + data_csv['City'] + ', ' + data_csv['State'] + ', ' + data_csv['Country']
+data_csv['Coordinates'] = data_csv['Address'].apply(nom.geocode)
+data_csv['Latitude'] = data_csv['Coordinates'].apply(lambda x: x.latitude if x != None else None)
+data_csv['Longitude'] = data_csv['Coordinates'].apply(lambda x: x.longitude if x != None else None)

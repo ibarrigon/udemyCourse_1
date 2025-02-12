@@ -9,6 +9,6 @@ path = './course_code/14_computer_vision/files/sample_images/'
 images = glob.glob(path + "*.jpg")
 
 for image in images:
-    img = cv2.imread(image, 0)
-    resized = cv2.resize(img, (100, 100))
+    image_content = cv2.imread(image, 0)
+    resized = cv2.resize(image_content, (100, 100))
     cv2.imwrite(path + "resized_" + image, resized) 

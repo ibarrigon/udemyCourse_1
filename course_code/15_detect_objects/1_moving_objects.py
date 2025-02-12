@@ -16,7 +16,7 @@ times = []
 video = cv2.VideoCapture(0)
 # clear frame (only background)
 first_frame = getGrayImage(getColorImage(video))
-df = pandas.DataFrame(columns = ['Start', 'End'])
+data_content = pandas.DataFrame(columns = ['Start', 'End'])
 
 while True:
     there_is_movement = 0
@@ -27,9 +27,9 @@ while True:
     thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THESH_BINARY)[1]
     thresh_frame = cv2.dilate(thresh_frame, None, iterations = 2) # The bigger iterations the smoother it is
     
-    (_, cnts, _) = cv2.findContours(thresh_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    (_, contours, _) = cv2.findContours(thresh_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     
-    for contour in cnts:
+    for contour in contours:
         if cv2.contourArea(contour) < 1000:
             continue
 
@@ -52,9 +52,9 @@ while True:
 print(times)
 
 for i in range(0, len(times), 2):
-    df = df.append({ 'Start': times[i], 'End': times[i + 1] }, ignore_index = true)
+    data_content = data_content.append({ 'Start': times[i], 'End': times[i + 1] }, ignore_index = true)
 
-df.to_csv('times.csv')
+data_content.to_csv('times.csv')
 
 # This code is required any time
 video.release()
