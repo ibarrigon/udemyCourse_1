@@ -15,6 +15,7 @@
 # nom.geocode('1056 Sanchez St, San Francisco, California, USA')
 
 from geopy.geocoders import ArcGIS
+import pandas
 
 nom = ArcGIS()
 location = nom.geocode('1056 Sanchez St, San Francisco, California, USA')
