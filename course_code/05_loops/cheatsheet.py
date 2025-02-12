@@ -13,7 +13,7 @@ for letter in 'abc':
 # The name after for (e.g. letter) is just a variable name
 
 # You can loop over dictionary keys as follows:
-phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 for value in phone_numbers.keys():
     print(value)
 # Output:
@@ -21,7 +21,7 @@ for value in phone_numbers.keys():
 # Marry Simpsons
 
 # You can loop over dictionary values:
-phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 for value in phone_numbers.values():
     print(value)
 # Output:
@@ -29,7 +29,7 @@ for value in phone_numbers.values():
 # +423998200919
 
 # You can loop over dictionary items:
-phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 for key, value in phone_numbers.items():
     print(key, value)
 # Output: 
