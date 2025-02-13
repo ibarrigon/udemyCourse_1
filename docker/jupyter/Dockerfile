@@ -19,6 +19,10 @@ RUN pip3 install opencv-python
 RUN pip3 install folium
 RUN pip3 install bokeh
 
+RUN pip3 install justpy
+RUN pip3 install pytz
+RUN pip3 install matplotlib
+
 RUN pip3 install jupyter
 
 EXPOSE 8888
