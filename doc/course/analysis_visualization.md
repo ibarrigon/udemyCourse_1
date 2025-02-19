@@ -9,3 +9,6 @@
 + pytz
 + matplotlib
 
+## Plots
+
+As you can see in the output, matplotlib its good for exploration, but not for presentation.
