@@ -15,9 +15,9 @@ A library to create plots and data visualization. It's interactive.
 
 In the course the parsed date its in read_csv, but it doesn't work for this implementation and Docker image. 
 The code you can read in the course it's:
-```
+`
 externalData = pandas.read_csv('./files/adbe.csv', parse_dates = ['Date'], date_format = lambda dt: datetime.datetime.strptime(dt, '%d-%b-%y'))
-```
+`
 
 ## Styles
 

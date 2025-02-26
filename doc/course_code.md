@@ -16,3 +16,4 @@ These is the testing of the code readed and worked in the course.
 5. [Detect moving objects](./course/detect_move.md)
 6. [Interactive data visualization](./course/data_visualization.md)
 7. [Data analisys and visualization](./course/analysis_visualization.md)
+8. [Web interactive plots](./course/web_interactive_plots.md)

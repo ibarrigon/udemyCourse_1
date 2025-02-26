@@ -12,7 +12,11 @@ docker-compose up -d
 docker-compose stop
 
 ## container name
-udemycourse_1-app-1
+To access the python container, you can use
+`python`
 
-## Go inside image
-docker exec -it udemycourse_1-app-1 bash
+To access the jupyter container, you can use
+`jupyter-py`
+
+To access the container via console:
+`docker exec -it python bash`
