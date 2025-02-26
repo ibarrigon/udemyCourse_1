@@ -18,3 +18,6 @@ First web app:
 ## Styles
 Search at google: `quasar style`
 Anyway, you can directly go to `https://www.highcharts.com/docs/chart-and-series-types/chart-types`
+
+## Codde
+I don't like to put the javascript chart code directly inside the code. But I do (more or less) what the eductor does.
